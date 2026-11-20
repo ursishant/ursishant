@@ -1,110 +1,251 @@
+
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:111827,45:312e81,100:0f766e&height=190&section=header&text=ISHANT%20SHARMA&fontSize=48&fontColor=ffffff&fontAlignY=42&desc=DESIGNER%20%E2%80%A2%20BUILDER%20%E2%80%A2%20INDEPENDENT%20CREATOR&descSize=13&descAlignY=67&animation=fadeIn" width="100%" alt="Ishant Sharma profile banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFF1D6,50:F5D6C6,100:D9E7E3&height=200&section=header&text=Ishant%20Sharma&fontSize=55&fontColor=37312D&fontAlignY=40&desc=Designer%20%2F%20Builder%20%2F%20Professional%20Overthinker&descSize=14&descColor=625B55&descAlignY=65" width="100%"/>
 
-<br/>
+### ✏️ A creative mind with 47 unfinished ideas.
 
-<a href="https://ursishant.netlify.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Explore-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/ursishant/"><img src="https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://www.behance.net/ursishant"><img src="https://img.shields.io/badge/BEHANCE-Selected%20work-1769FF?style=for-the-badge&logo=behance&logoColor=white" alt="Behance"/></a>
+*Designing pixels, building products, and occasionally wondering why something worked before I touched it.*
 
-<br/><br/>
-
-**I turn ideas into useful digital experiences.**
-
-Ishant Sharma · Designer with a builder's mindset · India
+[Portfolio](https://ursishant.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/ursishant/) · [Behance](https://www.behance.net/ursishant) · [Email](mailto:hello@ursishant.netlify.app)
 
 </div>
 
 ---
 
-## / 01 — A little about me
+<div align="center">
 
-I'm a designer who enjoys working at the intersection of **visual design, product thinking, and technology**.
+> 📝 **A note to whoever found this page:**
+>
+> "I built AirBridge because sending a file between two devices shouldn't require a PhD, three cables, and a cloud subscription. Anyway, it's free, open source, and lives on your local network. You're welcome."
+>
+> *Yes, I have a solution for problems I create myself.*
 
-I care about how things look, but I'm just as interested in how they work. My work moves between brand and graphic design, interfaces, websites, and small products built to solve real problems.
+</div>
 
-Over the years, I've designed for digital publications, built products independently, and worked across the full journey from a rough idea to something people can actually use.
+## 🗒️ The person behind the pixels
 
-- **Currently exploring:** UI/UX, product design, and thoughtful digital experiences.
-- **What I do:** Visual design, interface design, websites, and product experiments.
-- **How I work:** Curious, detail-oriented, independent, and comfortable learning by building.
-- **Based in:** India · Open to remote opportunities and collaborations.
+Hey! I'm **Ishant Sharma**, a graphic designer, independent builder, and someone who finds it difficult to stick to just one creative discipline.
 
-## / 02 — Selected work
+I started with graphic design, got curious about interfaces, started building websites, and somehow ended up creating products.
 
-A few projects that represent the kind of things I like making.
+I enjoy the entire process: from a random idea scribbled somewhere to a polished experience that people can actually use.
+
+**A few things about me:**
+
+- 🎨 Graphic designer with 5+ years of experience.
+- 🧩 Exploring UI/UX and product design.
+- 💻 Building websites, SaaS products, and open-source experiments.
+- 🚀 Interested in creative technology and independent products.
+- 🇮🇳 Based in India. Open to remote opportunities and collaborations.
+- ☕ Powered by curiosity and an unhealthy number of browser tabs.
+
+---
+
+## 📌 The sticky note wall
+
+*Things I made instead of touching grass.*
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>01 / AirBridge</h3>
-      <p><strong>Open-source · Local-first · File sharing</strong></p>
-      <p>A practical bridge for moving files between devices on the same local network. No cloud account, no cables, and no unnecessary friction.</p>
-      <a href="https://github.com/ursishant/airbridge">Explore the repository ↗</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>02 / NyayaShastra</h3>
-      <p><strong>Legal information · Accessibility</strong></p>
-      <p>An effort to make Indian legal information easier to understand through plain-language explanations and useful document tools.</p>
-      <a href="https://nyayashastra.pennion.com/">Explore the project ↗</a>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>03 / BigBreakingWire Prime</h3>
-      <p><strong>Fintech · Data experience</strong></p>
-      <p>Built a market-focused digital product from the ground up, bringing financial data, research, and chart-led workflows into one experience.</p>
-      <a href="https://prime.bigbreakingwire.in/">Explore Prime ↗</a>
-    </td>
-    <td width="50%" valign="top">
-      <h3>04 / SnapLensStudio</h3>
-      <p><strong>Creative technology · AR</strong></p>
-      <p>A creative project that crossed 75 million+ plays. A reminder that playful ideas can reach a much bigger audience than expected.</p>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top" bgcolor="#FFF1A8">
+
+### 🟨 AirBridge
+
+**OPEN SOURCE · FILE SHARING**
+
+Ever tried sending a file between your Mac and Android?
+
+Yeah. That's why this exists.
+
+A local-network file-sharing tool connecting devices without cloud accounts, cables, or unnecessary friction.
+
+- Multi-platform support
+- Local network transfers
+- QR-based connection
+- Clipboard sync
+- Open source and free
+
+**[↗ Explore AirBridge](https://github.com/ursishant/airbridge)**
+
+<sub>STATUS: Trying to make file sharing boring again.</sub>
+
+</td>
+<td width="50%" valign="top" bgcolor="#DDF2DD">
+
+### 🟩 NyayaShastra
+
+**LEGAL TECH · INDIA**
+
+Because reading legal documents shouldn't feel like decoding ancient manuscripts.
+
+An initiative to make Indian legal information easier to understand through plain-language explanations and useful document tools.
+
+**[↗ Visit NyayaShastra](https://nyayashastra.pennion.com/)**
+
+<sub>STATUS: Making complicated things simpler.</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" bgcolor="#DCEAFF">
+
+### 🟦 BigBreakingWire Prime
+
+**FINTECH · PRODUCT BUILDING**
+
+From zero to a working financial market platform.
+
+Built the product from scratch, bringing market data, research, and interactive chart experiences together.
+
+**[↗ Explore Prime](https://prime.bigbreakingwire.in/)**
+
+<sub>STATUS: Numbers doing number things.</sub>
+
+</td>
+<td width="50%" valign="top" bgcolor="#F8DDEB">
+
+### 🩷 SnapLensStudio
+
+**CREATIVE TECH · AR**
+
+One of those experiments that went a little further than expected.
+
+Crossed **75M+ plays**.
+
+Still sounds unreal when I type it.
+
+<sub>STATUS: Internet did its thing.</sub>
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" bgcolor="#E9DFFF">
+
+### 🟪 Pennion
+
+**INDEPENDENT DIGITAL STUDIO**
+
+My umbrella for building digital products, websites, and useful online experiences.
+
+**[↗ Explore Pennion](https://pennion.com/)**
+
+<sub>STATUS: Building things on the internet.</sub>
+
+</td>
+<td width="50%" valign="top" bgcolor="#FFE5D2">
+
+### 🟧 More experiments
+
+**IDEAS · PROTOTYPES · SIDE PROJECTS**
+
+From browser tools to productivity experiments, I enjoy turning random ideas into actual products.
+
+<sub>STATUS: There are too many of these.</sub>
+
+</td>
+</tr>
 </table>
 
-## / 03 — The design toolkit
+---
 
-**Design**
+## ✂️ What's inside my creative toolbox?
 
-<br/>
-<img src="https://skillicons.dev/icons?i=figma,ps,ai" alt="Figma, Photoshop, Illustrator" />
+*Some tools I use. Some tools I keep opening just to stare at them.*
 
-**Web & build**
+**Design & visual storytelling**
 
-<br/>
-<img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs,wordpress,nodejs" alt="Web technologies" />
+<p>
+<img src="https://skillicons.dev/icons?i=figma,ps,ai" />
+</p>
 
-**Also exploring**
+**Development & the internet stuff**
 
-<br/>
-<img src="https://skillicons.dev/icons?i=blender,git,github" alt="Blender, Git, GitHub" />
+<p>
+<img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs,nodejs,wordpress,git,github" />
+</p>
 
-I enjoy moving between design and implementation. It helps me make decisions with a better understanding of the real constraints behind a product.
+**Also experimenting with**
 
-## / 04 — A few things I believe
+<p>
+<img src="https://skillicons.dev/icons?i=blender" />
+</p>
 
-- Good design makes complex things feel simple.
-- The details are not details. They shape the experience.
-- A useful product is better than a perfect concept that never ships.
-- Constraints can make the work more interesting.
-- Keep learning. Keep making. Share what you build.
+---
 
-## / 05 — Find me around the internet
+## 🧾 The professional timeline
+
+| When | Where | What I did |
+|---|---|---|
+| Oct 2024 – Jul 2026 | CollegeDunia | Graphic Designer |
+| Jan 2024 – Oct 2024 | BigBreakingWire | Graphic Designer |
+| Jul 2020 – Oct 2023 | Freelance | Graphic Designer |
+
+**Education:** Bachelor of Computer Applications (BCA)
+
+I have worked across digital publishing, social media creatives, marketing design, banners, emailers, websites, and product experiences.
+
+I enjoy taking ownership of creative work and figuring things out independently.
+
+---
+
+## 📎 Random thoughts in the margins
+
+<details>
+<summary>Things I strongly believe in (click to unfold)</summary>
+
+- Good design should make things feel effortless.
+- If a button needs a 5-minute explanation, something went wrong.
+- Ship first. Overthink later.
+- A side project is just procrastination with a GitHub repository.
+- The smallest details can make the biggest difference.
+- There is always one more pixel to fix.
+- Not every idea needs to become a startup. Some can just be fun.
+
+</details>
+
+<details>
+<summary>Things currently happening in my head</summary>
+
+- Could this be a product?
+- What if the interface had better spacing?
+- Let's try building it.
+- Why is this CSS doing that?
+- Maybe I should redesign the whole thing.
+- I should probably sleep.
+
+</details>
+
+---
+
+## 📊 My GitHub corner
 
 <div align="center">
 
-<a href="https://ursishant.netlify.app/">Portfolio</a> &nbsp; / &nbsp;
-<a href="https://www.linkedin.com/in/ursishant/">LinkedIn</a> &nbsp; / &nbsp;
-<a href="https://www.behance.net/ursishant">Behance</a> &nbsp; / &nbsp;
-<a href="https://github.com/ursishant">GitHub</a>
+<img src="https://github-readme-stats.vercel.app/api?username=ursishant&show_icons=true&hide_border=true&bg_color=FFF9EF&title_color=66574B&text_color=66574B&icon_color=C58A55" width="49%" />
 
-<br/><br/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ursishant&layout=compact&hide_border=true&bg_color=FFF9EF&title_color=66574B&text_color=66574B" width="49%" />
 
-**Have an interesting idea or a product worth exploring? Let's connect.**
+<img src="https://streak-stats.demolab.com?user=ursishant&hide_border=true&background=FFF9EF&ring=C58A55&fire=E58B62&currStreakLabel=66574B&sideLabels=66574B&dates=897C70" width="75%" />
 
-<sub>Designed with curiosity. Built with intent.</sub>
+</div>
+
+---
+
+<div align="center">
+
+### 💌 Leave a little note?
+
+Have a cool project, interesting idea, or something worth building together?
+
+Let's connect.
+
+[Portfolio](https://ursishant.netlify.app/) · [LinkedIn](https://www.linkedin.com/in/ursishant/) · [Behance](https://www.behance.net/ursishant) · [GitHub](https://github.com/ursishant)
+
+<br/>
+
+*Made with curiosity, caffeine, and an unreasonable amount of alignment guides.*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FFF1D6,50:F5D6C6,100:D9E7E3&height=100&section=footer" width="100%"/>
 
 </div>
