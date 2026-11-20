@@ -72,20 +72,6 @@ I started with graphic design, got curious about interfaces, started building we
 
 ---
 
-### the professional timeline
-
-| When | Where | What I did |
-|---|---|---|
-| Oct 2024 – Present | CollegeDunia | Graphic Designer |
-| Jan 2024 – Oct 2024 | BigBreakingWire | Graphic Designer |
-| Jul 2020 – Oct 2023 | Freelance | Graphic Designer |
-
-**Education:** Bachelor of Computer Applications (BCA)
-
-I've worked across digital publishing, interface design, marketing creatives, and product experiences. I enjoy taking complete ownership of creative work and figuring out hard problems independently.
-
----
-
 ### random thoughts in the margins
 
 <details>
