@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./header.svg" width="100%" alt="Ishant Sharma // The Desk &amp; Notebook" />
+  <img src="./hero_desk.svg" width="100%" alt="Ishant Sharma // The Desk &amp; Notebook" />
 </div>
 
 <br/>
@@ -32,16 +32,16 @@
 *things I made instead of touching grass.*
 
 <p align="center">
-  <a href="https://github.com/ursishant/airbridge"><img src="./sticky-airbridge.svg" width="48%" alt="AirBridge Sticky Note" /></a>
-  <a href="https://nyayashastra.pennion.com/"><img src="./sticky-nyayashastra.svg" width="48%" alt="NyayaShastra Sticky Note" /></a>
+  <a href="https://github.com/ursishant/airbridge"><img src="./sticky_airbridge.svg" width="48%" alt="AirBridge Sticky Note" /></a>
+  <a href="https://nyayashastra.pennion.com/"><img src="./sticky_nyayashastra.svg" width="48%" alt="NyayaShastra Sticky Note" /></a>
 </p>
 <p align="center">
-  <a href="https://prime.bigbreakingwire.in/"><img src="./sticky-bbwprime.svg" width="48%" alt="BBW Prime Sticky Note" /></a>
-  <a href="https://github.com/ursishant"><img src="./sticky-snaplens.svg" width="48%" alt="SnapLensStudio Sticky Note" /></a>
+  <a href="https://prime.bigbreakingwire.in/"><img src="./sticky_bbwprime.svg" width="48%" alt="BBW Prime Sticky Note" /></a>
+  <a href="https://github.com/ursishant"><img src="./sticky_snaplens.svg" width="48%" alt="SnapLensStudio Sticky Note" /></a>
 </p>
 <p align="center">
-  <a href="https://pennion.com/"><img src="./sticky-pennion.svg" width="48%" alt="Pennion Sticky Note" /></a>
-  <a href="mailto:hello@ursishant.netlify.app"><img src="./sticky-connect.svg" width="48%" alt="Connect Sticky Note" /></a>
+  <a href="https://pennion.com/"><img src="./sticky_pennion.svg" width="48%" alt="Pennion Sticky Note" /></a>
+  <a href="mailto:hello@ursishant.netlify.app"><img src="./sticky_connect.svg" width="48%" alt="Connect Sticky Note" /></a>
 </p>
 
 <br/>
