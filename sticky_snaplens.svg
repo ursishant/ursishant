@@ -26,7 +26,7 @@
 
     <g transform="translate(26, 32)">
       <text x="0" y="0" fill="#BE185D" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 04 • CREATIVE TECH</text>
-      <text x="372" y="0" fill="#DB2777" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">75M+ PLAYS</text>
+      <text x="372" y="0" fill="#DB2777" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">200M+ VIEWS</text>
 
       <line x1="0" y1="10" x2="372" y2="10" stroke="#F43F5E" stroke-opacity="0.35" stroke-width="1" />
 
@@ -34,12 +34,12 @@
       <text x="0" y="58" fill="#9D174D" class="sans" font-size="12" font-weight="600">Augmented reality experiments that went a bit too far</text>
 
       <rect x="-4" y="74" width="380" height="42" rx="4" fill="#FBCFE8" fill-opacity="0.6" />
-      <text x="8" y="93" fill="#831843" class="sans" font-size="12" font-weight="700">"crossed 75,000,000+ organic plays.</text>
+      <text x="8" y="93" fill="#831843" class="sans" font-size="12" font-weight="700">"crossed 200,000,000+ views (150M+ plays).</text>
       <text x="8" y="108" fill="#831843" class="sans" font-size="12" font-weight="700">still sounds unreal every single time I type it."</text>
 
       <g transform="translate(0, 138)">
         <text x="0" y="0" fill="#BE185D" class="mono" font-size="11" font-weight="700">•</text>
-        <text x="14" y="0" fill="#831843" class="sans" font-size="12" font-weight="500">75M+ viral impressions worldwide on Snapchat</text>
+        <text x="14" y="0" fill="#831843" class="sans" font-size="12" font-weight="500">200M+ views &amp; 151M+ plays on Snapchat</text>
 
         <text x="0" y="20" fill="#BE185D" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="20" fill="#831843" class="sans" font-size="12" font-weight="500">Playful creative tech • AR camera interactions</text>
