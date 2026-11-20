@@ -1,266 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="100%" height="100%">
   <defs>
     <style>
-      @keyframes meshOrbit1 {
+      @keyframes floatMesh1 {
         0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(320px, 60px) scale(1.15); }
+        50% { transform: translate(140px, 35px) scale(1.12); }
       }
-      @keyframes meshOrbit2 {
+      @keyframes floatMesh2 {
         0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(-280px, -40px) scale(1.2); }
+        50% { transform: translate(-130px, -25px) scale(1.15); }
       }
-      @keyframes meshOrbit3 {
+      @keyframes floatMesh3 {
         0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(160px, -70px) scale(0.9); }
+        50% { transform: translate(70px, -45px) scale(0.92); }
       }
-      @keyframes beamFlow {
-        0% { stroke-dashoffset: 40; }
-        100% { stroke-dashoffset: 0; }
-      }
-      @keyframes ledBlink {
-        0%, 100% { opacity: 1; filter: drop-shadow(0 0 6px #5FFFE1); }
+      @keyframes beaconPulse {
+        0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #5FFFE1); }
         50% { opacity: 0.35; filter: drop-shadow(0 0 1px #5FFFE1); }
       }
-      @keyframes pulseRing {
-        0% { r: 3px; opacity: 0.9; }
-        100% { r: 10px; opacity: 0; }
-      }
 
-      .mesh-blob1 { animation: meshOrbit1 16s ease-in-out infinite; }
-      .mesh-blob2 { animation: meshOrbit2 19s ease-in-out infinite; }
-      .mesh-blob3 { animation: meshOrbit3 14s ease-in-out infinite; }
-      .data-stream { stroke-dasharray: 6 6; animation: beamFlow 1.2s linear infinite; }
-      .live-led { animation: ledBlink 2.2s ease-in-out infinite; }
-      .radar-ring { animation: pulseRing 2s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+      .mesh-1 { animation: floatMesh1 16s ease-in-out infinite; }
+      .mesh-2 { animation: floatMesh2 19s ease-in-out infinite; }
+      .mesh-3 { animation: floatMesh3 13s ease-in-out infinite; }
+      .beacon { animation: beaconPulse 2s ease-in-out infinite; }
 
       .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
-      .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, -system-ui, sans-serif; }
+      .display { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, -system-ui, sans-serif; }
+      .serif { font-family: "New York", Georgia, Cambria, "Times New Roman", serif; font-style: italic; }
     </style>
 
-    <!-- MSHR Wellbeing Palette Gradients -->
-    <radialGradient id="meshCyan" cx="50%" cy="50%" r="50%">
+    <!-- MSHR Wellbeing Exact Palette: Aquamarine (#5FFFE1), Electric Violet (#BB29F2), Perfume Lilac (#E8BCFD) -->
+    <radialGradient id="meshAqua" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#5FFFE1" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#2DD4BF" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#05070B" stop-opacity="0" />
+      <stop offset="50%" stop-color="#2DD4BF" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="meshViolet" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#C026D3" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#9333EA" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#05070B" stop-opacity="0" />
+      <stop offset="0%" stop-color="#BB29F2" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#9333EA" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="meshPerfume" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#E8BCFD" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#05070B" stop-opacity="0" />
+      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Ambient Glow Blur -->
-    <filter id="auraBlur" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="65" result="blur" />
+    <!-- Stretched Ambient Liquid Diffusion Filter -->
+    <filter id="liquidGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="75" result="blur" />
     </filter>
 
-    <!-- Bezel Chamfer Stroke -->
-    <linearGradient id="bezelBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5FFFE1" stop-opacity="0.5" />
-      <stop offset="35%" stop-color="#FFFFFF" stop-opacity="0.12" />
-      <stop offset="70%" stop-color="#C026D3" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#5FFFE1" stop-opacity="0.25" />
-    </linearGradient>
-
-    <linearGradient id="hudInnerBorder" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02" />
+    <!-- Subtle Beveled Glass Chamfer Border -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5FFFE1" stop-opacity="0.45" />
+      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.1" />
+      <stop offset="70%" stop-color="#BB29F2" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
     </linearGradient>
   </defs>
 
-  <!-- Ambient Wellbeing Mesh Aura Behind the Device Bezel -->
-  <g filter="url(#auraBlur)" opacity="0.85">
-    <g class="mesh-blob1">
-      <circle cx="180" cy="120" r="220" fill="url(#meshCyan)" />
+  <!-- Deep Dark Outer Canvas -->
+  <rect width="1000" height="440" rx="20" fill="#06080D" />
+
+  <!-- Animated MSHR Wellbeing Liquid Mesh Field -->
+  <g filter="url(#liquidGlow)" opacity="0.92">
+    <g class="mesh-1">
+      <ellipse cx="200" cy="110" rx="340" ry="200" fill="url(#meshAqua)" />
     </g>
-    <g class="mesh-blob2">
-      <circle cx="820" cy="380" r="250" fill="url(#meshViolet)" />
+    <g class="mesh-2">
+      <ellipse cx="820" cy="330" rx="380" ry="240" fill="url(#meshViolet)" />
     </g>
-    <g class="mesh-blob3">
-      <circle cx="680" cy="140" r="200" fill="url(#meshPerfume)" />
+    <g class="mesh-3">
+      <ellipse cx="640" cy="130" rx="260" ry="170" fill="url(#meshPerfume)" />
     </g>
-  </g>
-
-  <!-- Hardware Chassis (Teenage Engineering / Apple Glass Console) -->
-  <rect x="20" y="20" width="960" height="480" rx="16" fill="#0A0D14" stroke="url(#bezelBorder)" stroke-width="1.5" />
-
-  <!-- Console Top Header Bar -->
-  <g transform="translate(20, 20)">
-    <!-- Top Bar Background Strip -->
-    <path d="M 0,16 Q 0,0 16,0 L 944,0 Q 960,0 960,16 L 960,44 L 0,44 Z" fill="#0E121B" />
-    <line x1="0" y1="44" x2="960" y2="44" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
-
-    <!-- Tactile Hardware Screws -->
-    <circle cx="24" cy="22" r="3" fill="#1F2937" stroke="#374151" stroke-width="0.8" />
-    <circle cx="38" cy="22" r="3" fill="#1F2937" stroke="#374151" stroke-width="0.8" />
-    <circle cx="52" cy="22" r="3" fill="#1F2937" stroke="#374151" stroke-width="0.8" />
-
-    <!-- Center System Callout -->
-    <g transform="translate(350, 27)">
-      <circle class="live-led" cx="0" cy="-4" r="3" fill="#5FFFE1" />
-      <circle class="radar-ring" cx="0" cy="-4" r="3" fill="none" stroke="#5FFFE1" stroke-width="1" />
-      <text x="14" y="0" fill="#94A3B8" class="mono" font-size="11" font-weight="600" letter-spacing="1.2">AIRBRIDGE CONSOLE // DAEMON 24/7</text>
-    </g>
-
-    <!-- Top Right Status Indicators -->
-    <g transform="translate(810, 27)">
-      <rect x="0" y="-12" width="62" height="18" rx="4" fill="#5FFFE1" fill-opacity="0.1" stroke="#5FFFE1" stroke-opacity="0.3" stroke-width="0.8" />
-      <text x="31" y="0" fill="#5FFFE1" class="mono" font-size="9.5" font-weight="700" letter-spacing="0.8" text-anchor="middle">ONLINE</text>
-
-      <text x="96" y="0" fill="#64748B" class="mono" font-size="10" font-weight="500">P2P:5050</text>
+    <g class="mesh-1">
+      <ellipse cx="380" cy="380" rx="280" ry="160" fill="url(#meshAqua)" opacity="0.5" />
     </g>
   </g>
 
-  <!-- Left Main Profile Section -->
-  <g transform="translate(56, 92)">
-    <!-- Section Identifier -->
-    <text x="0" y="16" fill="#64748B" class="mono" font-size="11" font-weight="600" letter-spacing="1.5">SYS // PRINCIPAL ARCHITECT &amp; BUILDER</text>
+  <!-- Editorial Card Container (Homage to Pin 3) -->
+  <rect x="18" y="18" width="964" height="404" rx="16" fill="#080C14" fill-opacity="0.84" stroke="url(#cardBorder)" stroke-width="1.2" />
 
-    <!-- Huge Editorial Name -->
-    <text x="0" y="70" fill="#FFFFFF" class="sans" font-size="44" font-weight="800" letter-spacing="-1.5">Ishant Sharma</text>
-
-    <!-- Role & Company Subtitle -->
-    <g transform="translate(0, 96)">
-      <text x="0" y="0" fill="#5FFFE1" class="mono" font-size="12.5" font-weight="700" letter-spacing="1.5">FOUNDER AT PENNION</text>
-      <text x="180" y="0" fill="#64748B" class="mono" font-size="12.5" font-weight="400">·  NEW DELHI [28.61° N]</text>
-    </g>
-
-    <!-- Manifesto / Statement -->
-    <g transform="translate(0, 142)">
-      <text x="0" y="0" fill="#E2E8F0" class="sans" font-size="16" font-weight="500" letter-spacing="-0.2">
-        Designing quiet, zero-friction systems across hardware boundaries.
-      </text>
-      <text x="0" y="24" fill="#94A3B8" class="sans" font-size="13.5" font-weight="400" letter-spacing="-0.1">
-        Bridging Apple &amp; Android devices with local-first, low-latency socket pipelines.
-      </text>
-    </g>
-
-    <!-- Tactile Hardware Buttons / Links -->
-    <g transform="translate(0, 206)">
-      <!-- Button: pennion.com -->
-      <g>
-        <rect x="0" y="0" width="120" height="30" rx="6" fill="#131924" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
-        <circle cx="12" cy="15" r="3" fill="#5FFFE1" />
-        <text x="24" y="19" fill="#F1F5F9" class="mono" font-size="11" font-weight="600" letter-spacing="0.5">pennion.com</text>
-      </g>
-
-      <!-- Button: X -->
-      <g transform="translate(130, 0)">
-        <rect x="0" y="0" width="94" height="30" rx="6" fill="#131924" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
-        <text x="47" y="19" fill="#94A3B8" class="mono" font-size="11" font-weight="600" text-anchor="middle">X / TWITTER</text>
-      </g>
-
-      <!-- Button: LinkedIn -->
-      <g transform="translate(234, 0)">
-        <rect x="0" y="0" width="86" height="30" rx="6" fill="#131924" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
-        <text x="43" y="19" fill="#94A3B8" class="mono" font-size="11" font-weight="600" text-anchor="middle">LINKEDIN</text>
-      </g>
-
-      <!-- Button: Instagram -->
-      <g transform="translate(330, 0)">
-        <rect x="0" y="0" width="94" height="30" rx="6" fill="#131924" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1" />
-        <text x="47" y="19" fill="#94A3B8" class="mono" font-size="11" font-weight="600" text-anchor="middle">INSTAGRAM</text>
-      </g>
-    </g>
-
-    <!-- Bottom Specs Strip -->
-    <g transform="translate(0, 276)">
-      <line x1="0" y1="0" x2="430" y2="0" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
-      <g transform="translate(0, 20)">
-        <text x="0" y="0" fill="#64748B" class="mono" font-size="10" font-weight="600">SPECIALIZATION:</text>
-        <text x="105" y="0" fill="#E2E8F0" class="mono" font-size="10" font-weight="500">P2P PROTOCOLS · DESIGN SYSTEMS · TACTILE UX</text>
-      </g>
-    </g>
+  <!-- Top Metadata Bar -->
+  <g transform="translate(48, 48)">
+    <text x="0" y="0" fill="#94A3B8" class="mono" font-size="11" font-weight="600" letter-spacing="1.5">&bull; PRODUCT DESIGNER &amp; BUILDER</text>
+    <text x="452" y="0" fill="#64748B" class="mono" font-size="11" font-weight="600" letter-spacing="1.5" text-anchor="middle">&bull; SWEAT THE DETAILS</text>
+    <text x="904" y="0" fill="#94A3B8" class="mono" font-size="11" font-weight="600" letter-spacing="1.5" text-anchor="end">&bull; NEW DELHI, IN</text>
   </g>
 
-  <!-- Right Side: The Interactive Live Continuity Terminal -->
-  <g transform="translate(530, 92)">
-    <!-- Terminal Screen Chassis -->
-    <rect x="0" y="0" width="414" height="388" rx="12" fill="#07090F" stroke="url(#hudInnerBorder)" stroke-width="1" />
+  <!-- Hairline Divider -->
+  <line x1="48" y1="68" x2="952" y2="68" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
 
-    <!-- Terminal Inner Top Bar -->
-    <rect x="0" y="0" width="414" height="34" rx="12" fill="#0C1019" />
-    <path d="M 0,12 Q 0,0 12,0 L 402,0 Q 414,0 414,12 L 414,34 L 0,34 Z" fill="#0C1019" />
-    <line x1="0" y1="34" x2="414" y2="34" stroke="#FFFFFF" stroke-opacity="0.06" stroke-width="1" />
+  <!-- Identity Block -->
+  <g transform="translate(48, 116)">
+    <text x="0" y="0" fill="#64748B" class="mono" font-size="12" font-weight="600" letter-spacing="2.5">MY NAME IS</text>
+    <text x="0" y="60" fill="#FFFFFF" class="display" font-size="62" font-weight="800" letter-spacing="-2.5">ISHANT SHARMA</text>
+  </g>
 
-    <g transform="translate(16, 21)">
-      <circle cx="4" cy="0" r="3" fill="#EF4444" opacity="0.6" />
-      <circle cx="16" cy="0" r="3" fill="#F59E0B" opacity="0.6" />
-      <circle cx="28" cy="0" r="3" fill="#10B981" opacity="0.6" />
-      <text x="46" y="3" fill="#94A3B8" class="mono" font-size="10" font-weight="600">AIRBRIDGE TELEMETRY // LIVE</text>
-    </g>
+  <!-- Big Statement -->
+  <g transform="translate(48, 240)">
+    <text x="0" y="0" fill="#F1F5F9" class="display" font-size="28" font-weight="500" letter-spacing="-0.8">
+      I design software that <tspan class="serif" fill="#5FFFE1" font-weight="400">gets out of your way.</tspan>
+    </text>
+    <text x="0" y="32" fill="#94A3B8" class="display" font-size="15" font-weight="400" letter-spacing="-0.2">
+      Founder at Pennion &bull; Building AirBridge, zero-friction local continuity between Apple &amp; Android.
+    </text>
+  </g>
 
-    <!-- Live Telemetry Content -->
-    <g transform="translate(20, 56)">
-      <!-- Transmission Diagram -->
-      <g transform="translate(0, 10)">
-        <!-- Mac Node -->
-        <rect x="0" y="0" width="104" height="48" rx="8" fill="#111622" stroke="#5FFFE1" stroke-opacity="0.3" stroke-width="1" />
-        <text x="52" y="22" fill="#FFFFFF" class="sans" font-size="12" font-weight="700" text-anchor="middle">macOS</text>
-        <text x="52" y="36" fill="#64748B" class="mono" font-size="9" text-anchor="middle">HOST [M-AIR]</text>
+  <!-- Bottom Navigation & Status Strip -->
+  <g transform="translate(48, 342)">
+    <rect x="0" y="0" width="310" height="32" rx="16" fill="#5FFFE1" fill-opacity="0.08" stroke="#5FFFE1" stroke-opacity="0.28" stroke-width="1" />
+    <circle class="beacon" cx="18" cy="16" r="3.5" fill="#5FFFE1" />
+    <text x="32" y="20" fill="#5FFFE1" class="mono" font-size="10.5" font-weight="600" letter-spacing="1.2">OPEN TO GOOD PROBLEMS &amp; CRAFT</text>
 
-        <!-- Animated Data Beam -->
-        <g transform="translate(114, 24)">
-          <line x1="0" y1="0" x2="146" y2="0" stroke="#1E293B" stroke-width="3" />
-          <line class="data-stream" x1="0" y1="0" x2="146" y2="0" stroke="#5FFFE1" stroke-width="2" />
-          <!-- Animated pulse packet -->
-          <circle cx="73" cy="0" r="4" fill="#5FFFE1" filter="drop-shadow(0 0 4px #5FFFE1)">
-            <animate attributeName="cx" values="10;136;10" dur="2s" repeatCount="indefinite" />
-          </circle>
-        </g>
-
-        <!-- Android Node -->
-        <rect x="270" y="0" width="104" height="48" rx="8" fill="#111622" stroke="#C026D3" stroke-opacity="0.3" stroke-width="1" />
-        <text x="322" y="22" fill="#FFFFFF" class="sans" font-size="12" font-weight="700" text-anchor="middle">Android</text>
-        <text x="322" y="36" fill="#64748B" class="mono" font-size="9" text-anchor="middle">PEER DEVICE</text>
-      </g>
-
-      <!-- Transmission Specs Metrics Grid -->
-      <g transform="translate(0, 84)">
-        <!-- Metric Row 1 -->
-        <g transform="translate(0, 0)">
-          <rect x="0" y="0" width="180" height="52" rx="6" fill="#0C1018" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
-          <text x="14" y="20" fill="#64748B" class="mono" font-size="9.5" font-weight="600">TRANSFER MODE</text>
-          <text x="14" y="39" fill="#5FFFE1" class="mono" font-size="13" font-weight="700">P2P WI-FI LAN</text>
-        </g>
-
-        <g transform="translate(194, 0)">
-          <rect x="0" y="0" width="180" height="52" rx="6" fill="#0C1018" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
-          <text x="14" y="20" fill="#64748B" class="mono" font-size="9.5" font-weight="600">CLOUD INTERMEDIARY</text>
-          <text x="14" y="39" fill="#F87171" class="mono" font-size="13" font-weight="700">ZERO (NONE)</text>
-        </g>
-
-        <!-- Metric Row 2 -->
-        <g transform="translate(0, 62)">
-          <rect x="0" y="0" width="180" height="52" rx="6" fill="#0C1018" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
-          <text x="14" y="20" fill="#64748B" class="mono" font-size="9.5" font-weight="600">FOLDER STREAMING</text>
-          <text x="14" y="39" fill="#E2E8F0" class="mono" font-size="13" font-weight="700">NATIVE C ZIP</text>
-        </g>
-
-        <g transform="translate(194, 62)">
-          <rect x="0" y="0" width="180" height="52" rx="6" fill="#0C1018" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
-          <text x="14" y="20" fill="#64748B" class="mono" font-size="9.5" font-weight="600">GITHUB TRACTION</text>
-          <text x="14" y="39" fill="#FBBF24" class="mono" font-size="13" font-weight="700">66+ STARS</text>
-        </g>
-      </g>
-
-      <!-- Terminal Bottom Log Stream -->
-      <g transform="translate(0, 222)">
-        <rect x="0" y="0" width="374" height="74" rx="6" fill="#04060A" stroke="#FFFFFF" stroke-opacity="0.04" stroke-width="1" />
-        <g transform="translate(14, 18)">
-          <text x="0" y="0" fill="#10B981" class="mono" font-size="9.5">&gt; socket::connected [client_darwin_arm64]</text>
-          <text x="0" y="16" fill="#5FFFE1" class="mono" font-size="9.5">&gt; vault_stream::parallel_workers [8 active]</text>
-          <text x="0" y="32" fill="#94A3B8" class="mono" font-size="9.5">&gt; clipboard::synced [bi-directional ok]</text>
-          <text x="0" y="46" fill="#64748B" class="mono" font-size="9.5">&gt; integrity_check::0 alerts [codeql clean]</text>
-        </g>
-      </g>
-    </g>
+    <text x="904" y="21" fill="#F8FAFC" class="mono" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end">SELECTED WORK &darr;</text>
   </g>
 </svg>
