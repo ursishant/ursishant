@@ -1,120 +1,222 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 490" width="100%" height="100%">
   <defs>
     <style>
-      @keyframes floatMesh1 {
-        0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(140px, 35px) scale(1.12); }
+      @keyframes floatPen {
+        0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+        50% { transform: translate(-3px, -5px) rotate(0.6deg); }
       }
-      @keyframes floatMesh2 {
-        0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(-130px, -25px) scale(1.15); }
-      }
-      @keyframes floatMesh3 {
-        0%, 100% { transform: translate(0px, 0px) scale(1); }
-        50% { transform: translate(70px, -45px) scale(0.92); }
-      }
-      @keyframes beaconPulse {
-        0%, 100% { opacity: 1; filter: drop-shadow(0 0 4px #5FFFE1); }
-        50% { opacity: 0.35; filter: drop-shadow(0 0 1px #5FFFE1); }
+      @keyframes ambientPulse {
+        0%, 100% { opacity: 0.22; }
+        50% { opacity: 0.32; }
       }
 
-      .mesh-1 { animation: floatMesh1 16s ease-in-out infinite; }
-      .mesh-2 { animation: floatMesh2 19s ease-in-out infinite; }
-      .mesh-3 { animation: floatMesh3 13s ease-in-out infinite; }
-      .beacon { animation: beaconPulse 2s ease-in-out infinite; }
+      .pen-hover { animation: floatPen 7s ease-in-out infinite; }
+      .ambient-glow { animation: ambientPulse 8s ease-in-out infinite; }
 
       .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
-      .display { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, -system-ui, sans-serif; }
-      .serif { font-family: "New York", Georgia, Cambria, "Times New Roman", serif; font-style: italic; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", Inter, -system-ui, sans-serif; }
     </style>
 
-    <!-- MSHR Wellbeing Exact Palette: Aquamarine (#5FFFE1), Electric Violet (#BB29F2), Perfume Lilac (#E8BCFD) -->
-    <radialGradient id="meshAqua" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#5FFFE1" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#2DD4BF" stop-opacity="0.45" />
-      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
-    </radialGradient>
+    <!-- Warm Dark Desk Surface Pattern -->
+    <pattern id="deskGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#252A36" stroke-width="0.8" stroke-opacity="0.6" />
+      <circle cx="30" cy="30" r="0.8" fill="#3B4252" fill-opacity="0.5" />
+    </pattern>
 
-    <radialGradient id="meshViolet" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#BB29F2" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#9333EA" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
-    </radialGradient>
+    <!-- Graph Paper Grid Overlay -->
+    <pattern id="notebookGrid" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#8892B0" stroke-width="0.5" stroke-opacity="0.22" />
+    </pattern>
 
-    <radialGradient id="meshPerfume" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#E8BCFD" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#C084FC" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#06080D" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Stretched Ambient Liquid Diffusion Filter -->
-    <filter id="liquidGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="75" result="blur" />
+    <!-- Deep Paper Drop Shadow -->
+    <filter id="paperShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000000" flood-opacity="0.55" />
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
     </filter>
 
-    <!-- Subtle Beveled Glass Chamfer Border -->
-    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#5FFFE1" stop-opacity="0.45" />
-      <stop offset="30%" stop-color="#FFFFFF" stop-opacity="0.1" />
-      <stop offset="70%" stop-color="#BB29F2" stop-opacity="0.35" />
-      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    <!-- Realistic Pen Drop Shadow -->
+    <filter id="penShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="12" dy="20" stdDeviation="12" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Frosted Scotch Tape Gradient -->
+    <linearGradient id="tapeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3" />
+    </linearGradient>
+
+    <!-- Metallic Pen Barrel Gradient -->
+    <linearGradient id="penBarrel" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="25%" stop-color="#475569" />
+      <stop offset="60%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+
+    <!-- Chrome Clip Gradient -->
+    <linearGradient id="chromeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CBD5E1" />
+      <stop offset="40%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Brass / Gold Nib Accent -->
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#CA8A04" />
+      <stop offset="100%" stop-color="#854D0E" />
+    </linearGradient>
+
+    <!-- Fluorescent Yellow Highlighter Gradient -->
+    <linearGradient id="highlighter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FACC15" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#FDE047" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FEF08A" stop-opacity="0.35" />
     </linearGradient>
   </defs>
 
-  <!-- Deep Dark Outer Canvas -->
-  <rect width="1000" height="440" rx="20" fill="#06080D" />
+  <!-- Dark Slate / Graphite Desk Background -->
+  <rect width="1000" height="490" rx="16" fill="#0C1017" />
+  <rect width="1000" height="490" rx="16" fill="url(#deskGrid)" />
 
-  <!-- Animated MSHR Wellbeing Liquid Mesh Field -->
-  <g filter="url(#liquidGlow)" opacity="0.92">
-    <g class="mesh-1">
-      <ellipse cx="200" cy="110" rx="340" ry="200" fill="url(#meshAqua)" />
+  <!-- Warm Desk Lamp Ambient Glow -->
+  <circle cx="180" cy="90" r="340" fill="#38BDF8" class="ambient-glow" filter="blur(90px)" />
+  <circle cx="860" cy="380" r="300" fill="#F472B6" class="ambient-glow" filter="blur(100px)" />
+
+  <!-- ============================================== -->
+  <!-- NOTEBOOK SHEET (Cream Ivory Drafting Paper)    -->
+  <!-- ============================================== -->
+  <g transform="translate(45, 35)">
+    <!-- Sheet Shadow & Cream Body -->
+    <g filter="url(#paperShadow)">
+      <rect width="670" height="420" rx="6" fill="#FBF8F1" />
     </g>
-    <g class="mesh-2">
-      <ellipse cx="820" cy="330" rx="380" ry="240" fill="url(#meshViolet)" />
+
+    <!-- Graph Paper Grid Overlay -->
+    <rect width="670" height="420" rx="6" fill="url(#notebookGrid)" />
+
+    <!-- Red Margin Lines (Classic Notebook) -->
+    <line x1="68" y1="0" x2="68" y2="420" stroke="#EF4444" stroke-opacity="0.38" stroke-width="1.2" />
+    <line x1="72" y1="0" x2="72" y2="420" stroke="#EF4444" stroke-opacity="0.18" stroke-width="0.8" />
+
+    <!-- Spiral Binder Holes along Left Margin -->
+    <g fill="#0C1017" opacity="0.35">
+      <circle cx="28" cy="42" r="6" />
+      <circle cx="28" cy="118" r="6" />
+      <circle cx="28" cy="194" r="6" />
+      <circle cx="28" cy="270" r="6" />
+      <circle cx="28" cy="346" r="6" />
     </g>
-    <g class="mesh-3">
-      <ellipse cx="640" cy="130" rx="260" ry="170" fill="url(#meshPerfume)" />
+
+    <!-- Frosted Scotch Tape Holding Sheet Top -->
+    <rect x="285" y="-12" width="100" height="26" rx="2" fill="url(#tapeGrad)" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="0.8" transform="rotate(-1.5 335 0)" />
+
+    <!-- Top Paper Header (Meta Info) -->
+    <g transform="translate(95, 36)">
+      <text x="0" y="0" fill="#64748B" class="mono" font-size="10" font-weight="700" letter-spacing="1.5">NOTEBOOK // VOL. 01</text>
+      <text x="310" y="0" fill="#94A3B8" class="mono" font-size="10" font-weight="600" letter-spacing="1">LOCATION: NEW DELHI, IN</text>
+      <text x="550" y="0" fill="#64748B" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">STATUS: SHIPPING</text>
     </g>
-    <g class="mesh-1">
-      <ellipse cx="380" cy="380" rx="280" ry="160" fill="url(#meshAqua)" opacity="0.5" />
+
+    <line x1="95" y1="48" x2="645" y2="48" stroke="#0F172A" stroke-opacity="0.12" stroke-width="1" />
+
+    <!-- Main Identity -->
+    <g transform="translate(95, 96)">
+      <text x="0" y="0" fill="#475569" class="mono" font-size="11" font-weight="600" letter-spacing="2">DESIGNER &bull; BUILDER &bull; OVERTHINKER</text>
+      <text x="0" y="44" fill="#0F172A" class="sans" font-size="44" font-weight="900" letter-spacing="-1.5">ISHANT SHARMA</text>
+    </g>
+
+    <!-- The Funny Quote with Highlighter Accent -->
+    <g transform="translate(95, 185)">
+      <!-- Fluorescent Highlighter Stroke -->
+      <path d="M -4 14 Q 250 8 520 12 L 516 36 Q 260 40 -6 34 Z" fill="url(#highlighter)" />
+
+      <!-- User's authentic Gen Z quote -->
+      <text x="0" y="25" fill="#0F172A" class="sans" font-size="20" font-weight="800" letter-spacing="-0.5">
+        "a creative mind with 47 unfinished ideas."
+      </text>
+
+      <text x="0" y="56" fill="#475569" class="sans" font-size="13" font-weight="500">
+        designing pixels, building products, and wondering why something worked before I touched it.
+      </text>
+    </g>
+
+    <!-- Marginal Checklist & Desk Rules -->
+    <g transform="translate(95, 280)">
+      <rect x="0" y="0" width="550" height="110" rx="6" fill="#0F172A" fill-opacity="0.04" stroke="#0F172A" stroke-opacity="0.08" stroke-width="1" />
+
+      <!-- Marginal Note Header -->
+      <g transform="translate(18, 24)">
+        <text x="0" y="0" fill="#0F172A" class="mono" font-size="11" font-weight="700" letter-spacing="1">// CURRENT DESK RULES &amp; TODOS:</text>
+      </g>
+
+      <!-- Checklist items -->
+      <g transform="translate(18, 48)">
+        <text x="0" y="0" fill="#059669" class="mono" font-size="11" font-weight="700">[&check;]</text>
+        <text x="24" y="0" fill="#334155" class="mono" font-size="11">AirBridge: file sharing without a PhD, 3 cables, or cloud BS</text>
+
+        <text x="0" y="20" fill="#059669" class="mono" font-size="11" font-weight="700">[&check;]</text>
+        <text x="24" y="20" fill="#334155" class="mono" font-size="11">Pennion: software that doesn't feel like a tax form</text>
+
+        <text x="0" y="40" fill="#DC2626" class="mono" font-size="11" font-weight="700">[&times;]</text>
+        <text x="24" y="40" fill="#64748B" class="mono" font-size="11">touch grass <tspan fill="#EF4444" font-weight="600">(failed: overthinking 2px border-radius)</tspan></text>
+      </g>
     </g>
   </g>
 
-  <!-- Editorial Card Container (Homage to Pin 3) -->
-  <rect x="18" y="18" width="964" height="404" rx="16" fill="#080C14" fill-opacity="0.84" stroke="url(#cardBorder)" stroke-width="1.2" />
+  <!-- ============================================== -->
+  <!-- A MINI YELLOW STICKY NOTE PINNED TO DESK       -->
+  <!-- ============================================== -->
+  <g transform="translate(745, 45) rotate(3)">
+    <g filter="url(#paperShadow)">
+      <rect width="210" height="155" rx="3" fill="#FEF08A" />
+      <path d="M 185 155 L 210 130 L 185 130 Z" fill="#EAB308" />
+    </g>
+    <rect x="70" y="-8" width="70" height="20" rx="1.5" fill="url(#tapeGrad)" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="0.6" transform="rotate(-2 105 0)" />
 
-  <!-- Top Metadata Bar -->
-  <g transform="translate(48, 48)">
-    <text x="0" y="0" fill="#94A3B8" class="mono" font-size="11" font-weight="600" letter-spacing="1.5">&bull; PRODUCT DESIGNER &amp; BUILDER</text>
-    <text x="452" y="0" fill="#64748B" class="mono" font-size="11" font-weight="600" letter-spacing="1.5" text-anchor="middle">&bull; SWEAT THE DETAILS</text>
-    <text x="904" y="0" fill="#94A3B8" class="mono" font-size="11" font-weight="600" letter-spacing="1.5" text-anchor="end">&bull; NEW DELHI, IN</text>
+    <g transform="translate(18, 26)">
+      <text x="0" y="0" fill="#854D0E" class="mono" font-size="9.5" font-weight="700" letter-spacing="1">STICKY NOTE // #00</text>
+      <line x1="0" y1="8" x2="174" y2="8" stroke="#CA8A04" stroke-opacity="0.4" stroke-width="0.8" />
+      <text x="0" y="30" fill="#713F12" class="sans" font-size="12" font-weight="700">if a button needs</text>
+      <text x="0" y="46" fill="#713F12" class="sans" font-size="12" font-weight="700">a 5-minute explanation,</text>
+      <text x="0" y="62" fill="#713F12" class="sans" font-size="12" font-weight="700">the design failed.</text>
+      <text x="0" y="98" fill="#A16207" class="mono" font-size="9" font-weight="600">&bull; see sticky notes &darr;</text>
+    </g>
   </g>
 
-  <!-- Hairline Divider -->
-  <line x1="48" y1="68" x2="952" y2="68" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1" />
+  <!-- ============================================== -->
+  <!-- REALISTIC PEN LYING ACROSS THE DESK           -->
+  <!-- ============================================== -->
+  <g class="pen-hover" transform="translate(775, 230) rotate(-26)">
+    <g filter="url(#penShadow)">
+      <!-- Pen Body (Matte Graphite Aluminum) -->
+      <rect x="0" y="6" width="220" height="16" rx="3" fill="url(#penBarrel)" />
 
-  <!-- Identity Block -->
-  <g transform="translate(48, 116)">
-    <text x="0" y="0" fill="#64748B" class="mono" font-size="12" font-weight="600" letter-spacing="2.5">MY NAME IS</text>
-    <text x="0" y="60" fill="#FFFFFF" class="display" font-size="62" font-weight="800" letter-spacing="-2.5">ISHANT SHARMA</text>
-  </g>
+      <!-- Pen Cap with Chrome Accent Ring -->
+      <rect x="110" y="5" width="100" height="18" rx="2" fill="#0F172A" stroke="#334155" stroke-width="0.5" />
+      <line x1="112" y1="5" x2="112" y2="23" stroke="#CBD5E1" stroke-width="1.5" />
 
-  <!-- Big Statement -->
-  <g transform="translate(48, 240)">
-    <text x="0" y="0" fill="#F1F5F9" class="display" font-size="28" font-weight="500" letter-spacing="-0.8">
-      I design software that <tspan class="serif" fill="#5FFFE1" font-weight="400">gets out of your way.</tspan>
-    </text>
-    <text x="0" y="32" fill="#94A3B8" class="display" font-size="15" font-weight="400" letter-spacing="-0.2">
-      Founder at Pennion &bull; Building AirBridge, zero-friction local continuity between Apple &amp; Android.
-    </text>
-  </g>
+      <!-- Chrome Metal Pocket Clip -->
+      <rect x="125" y="1" width="70" height="4" rx="2" fill="url(#chromeGrad)" />
+      <circle cx="127" cy="3" r="3" fill="url(#chromeGrad)" />
 
-  <!-- Bottom Navigation & Status Strip -->
-  <g transform="translate(48, 342)">
-    <rect x="0" y="0" width="310" height="32" rx="16" fill="#5FFFE1" fill-opacity="0.08" stroke="#5FFFE1" stroke-opacity="0.28" stroke-width="1" />
-    <circle class="beacon" cx="18" cy="16" r="3.5" fill="#5FFFE1" />
-    <text x="32" y="20" fill="#5FFFE1" class="mono" font-size="10.5" font-weight="600" letter-spacing="1.2">OPEN TO GOOD PROBLEMS &amp; CRAFT</text>
+      <!-- Grip Section with Tactile Grooves -->
+      <rect x="25" y="7" width="40" height="14" fill="#1E293B" />
+      <line x1="32" y1="7" x2="32" y2="21" stroke="#334155" stroke-width="0.8" />
+      <line x1="40" y1="7" x2="40" y2="21" stroke="#334155" stroke-width="0.8" />
+      <line x1="48" y1="7" x2="48" y2="21" stroke="#334155" stroke-width="0.8" />
+      <line x1="56" y1="7" x2="56" y2="21" stroke="#334155" stroke-width="0.8" />
 
-    <text x="904" y="21" fill="#F8FAFC" class="mono" font-size="11" font-weight="700" letter-spacing="1.2" text-anchor="end">SELECTED WORK &darr;</text>
+      <!-- Chrome Joint Ring -->
+      <rect x="22" y="6" width="3" height="16" fill="url(#chromeGrad)" />
+
+      <!-- Tapered Cone & Nib -->
+      <polygon points="22,7 22,21 0,16 0,12" fill="url(#chromeGrad)" />
+      <polygon points="6,12 6,16 0,15 0,13" fill="url(#brassGrad)" />
+      <!-- Fine Ballpoint Tip -->
+      <circle cx="0" cy="14" r="1.5" fill="#0284C7" />
+    </g>
   </g>
 </svg>
