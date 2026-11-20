@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./hero_desk.svg" width="100%" alt="Ishant Sharma // The Desk &amp; Notebook" />
+  <img src="./desk_header.svg" width="100%" alt="Ishant Sharma // The Desk &amp; Notebook" />
 </div>
 
 <br/>
