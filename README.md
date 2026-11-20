@@ -1,56 +1,55 @@
 <div align="center">
-  <img src="./header.svg" width="100%" alt="Ishant Sharma — Design &amp; Systems Architecture" />
+  <img src="./header.svg" width="100%" alt="Ishant Sharma // Systems &amp; Hardware Continuity Console" />
 </div>
 
 <br/>
 
 <p align="center">
-  <a href="https://pennion.com"><b>pennion.com</b></a> &nbsp;·&nbsp;
-  <a href="https://x.com/ursishant">Twitter / X</a> &nbsp;·&nbsp;
-  <a href="https://linkedin.com/in/ursishant">LinkedIn</a> &nbsp;·&nbsp;
-  <a href="https://instagram.com/ursishant">Instagram</a> &nbsp;·&nbsp;
-  <a href="https://threads.net/@ursishant">Threads</a> &nbsp;·&nbsp;
+  <a href="https://pennion.com"><b>pennion.com</b></a> &nbsp;&bull;&nbsp;
+  <a href="https://x.com/ursishant">Twitter / X</a> &nbsp;&bull;&nbsp;
+  <a href="https://linkedin.com/in/ursishant">LinkedIn</a> &nbsp;&bull;&nbsp;
+  <a href="https://threads.net/@ursishant">Threads</a> &nbsp;&bull;&nbsp;
+  <a href="https://instagram.com/ursishant">Instagram</a> &nbsp;&bull;&nbsp;
   <a href="mailto:ishant8700@gmail.com">Contact</a>
 </p>
 
 <br/>
 
-### Selected Work
+### Selected Systems
 
 #### [AirBridge](https://github.com/ursishant/airbridge)
-*macOS to Android zero-friction continuity engine over local Wi-Fi.*
+*Zero-friction hardware continuity bridge connecting macOS and Android over peer-to-peer Wi-Fi.*
 
-- **Why it exists:** AirDrop is walled inside the Apple ecosystem. Existing cross-platform tools force cloud relay accounts, throttle transfers, or clutter the experience with ads. AirBridge runs directly over local network sockets.
-- **Under the hood:** Multi-stream parallel chunk uploads with atomic file descriptor positioning, native C ZIP streaming for instant folder archives at line rate, and universal clipboard sync across devices with zero external server dependencies.
-- **Details:** TypeScript, WebSockets, Node.js, POSIX file APIs, React.
+- **The Problem:** Apple refuses to bring AirDrop to Android. Third-party alternatives rely on external cloud servers, Bluetooth bandwidth bottlenecks, or ad-laden clients.
+- **The Architecture:** Local socket discovery, multi-stream chunk uploads with atomic POSIX file descriptor positioning, native C ZIP streaming for instant folder archives at line rate, and bi-directional clipboard sync.
+- **Traction:** 66+ GitHub stars, zero cloud dependency, 100% local-first.
+
+---
+
+#### [Pennion](https://pennion.com)
+*Product design studio &amp; software laboratory.*
+
+Building human-centric consumer software, fluid design systems, and applied creative tooling. Bridging high-fidelity interaction design with low-level systems engineering.
 
 ---
 
 #### [Thumbgen](https://github.com/ursishant/thumbgen)
 *Universal algorithmic video packaging engine.*
 
-- Visual narrative extraction engine engineered for Claude Code, Codex, Cursor, and Antigravity developer environments.
-- Formulates algorithmic title angles, retention-focused SEO structures, and direct prompt directives for creative AI pipelines.
+Visual narrative extraction and packaging engine engineered for Claude Code, Codex, Cursor, and Antigravity developer environments.
 
 ---
 
-#### [Pennion](https://pennion.com)
-*Product design studio and software laboratory.*
+### Craft & Architecture
 
-Building human-centric software, design systems, and digital products. Focused on craft, tactile user feedback, and software that gets out of the way.
-
----
-
-### Systems & Craft
-
-I work across the entire product spectrum — from user research, Figma prototypes, and design token architectures to socket protocols, native OS daemons, and low-latency client state.
-
-- **Interaction & Client:** React, TypeScript, Tailwind CSS, WebSockets, HTML5 Canvas, responsive PWA architecture.
-- **Backend & Systems:** Node.js, POSIX file descriptors, multi-chunk concurrency, macOS `launchd` daemons, Windows services.
-- **Design:** Figma, design systems, typography hierarchy, micro-interactions, hardware-informed user experience.
+```
+Client & Interaction  ──  React, TypeScript, Tailwind CSS, WebSockets, HTML5 Canvas, PWA
+Systems & Daemons     ──  Node.js, POSIX File Descriptors, macOS launchd, Windows Services
+Product Design        ──  Figma, Design Systems, Typography Architecture, Micro-Interactions
+```
 
 ---
 
 <p align="center">
-  <sub>Crafted with care in New Delhi. Focused on building software that lasts.</sub>
+  <sub>Ishant Sharma &bull; New Delhi &bull; Focused on software that lasts.</sub>
 </p>
