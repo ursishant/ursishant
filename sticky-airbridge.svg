@@ -27,7 +27,7 @@
 
     <!-- Content -->
     <g transform="translate(26, 32)">
-      <text x="0" y="0" fill="#854D0E" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 01 &bull; OPEN SOURCE</text>
+      <text x="0" y="0" fill="#854D0E" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 01 • OPEN SOURCE</text>
       <text x="372" y="0" fill="#A16207" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">FILE SHARING</text>
 
       <line x1="0" y1="10" x2="372" y2="10" stroke="#CA8A04" stroke-opacity="0.4" stroke-width="1" />
@@ -40,18 +40,18 @@
       <text x="8" y="108" fill="#78350F" class="sans" font-size="12" font-weight="700">cables, and an expensive cloud subscription."</text>
 
       <g transform="translate(0, 138)">
-        <text x="0" y="0" fill="#854D0E" class="mono" font-size="11" font-weight="700">&bull;</text>
-        <text x="14" y="0" fill="#1C1917" class="sans" font-size="12" font-weight="500">100% local-network Wi-Fi &bull; Zero cloud accounts</text>
+        <text x="0" y="0" fill="#854D0E" class="mono" font-size="11" font-weight="700">•</text>
+        <text x="14" y="0" fill="#1C1917" class="sans" font-size="12" font-weight="500">100% local-network Wi-Fi • Zero cloud accounts</text>
 
-        <text x="0" y="20" fill="#854D0E" class="mono" font-size="11" font-weight="700">&bull;</text>
-        <text x="14" y="20" fill="#1C1917" class="sans" font-size="12" font-weight="500">QR-based pairing &bull; instant clipboard sync</text>
+        <text x="0" y="20" fill="#854D0E" class="mono" font-size="11" font-weight="700">•</text>
+        <text x="14" y="20" fill="#1C1917" class="sans" font-size="12" font-weight="500">QR-based pairing • instant clipboard sync</text>
 
-        <text x="0" y="40" fill="#854D0E" class="mono" font-size="11" font-weight="700">&bull;</text>
-        <text x="14" y="40" fill="#1C1917" class="sans" font-size="12" font-weight="500">Free, open-source &bull; making file sharing boring again</text>
+        <text x="0" y="40" fill="#854D0E" class="mono" font-size="11" font-weight="700">•</text>
+        <text x="14" y="40" fill="#1C1917" class="sans" font-size="12" font-weight="500">Free, open-source • making file sharing boring again</text>
       </g>
 
       <g transform="translate(0, 218)">
-        <text x="0" y="0" fill="#854D0E" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO EXPLORE GITHUB REPO &rarr;</text>
+        <text x="0" y="0" fill="#854D0E" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO EXPLORE GITHUB REPO →</text>
       </g>
     </g>
   </g>

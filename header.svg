@@ -124,7 +124,7 @@
 
     <!-- Main Identity -->
     <g transform="translate(95, 96)">
-      <text x="0" y="0" fill="#475569" class="mono" font-size="11" font-weight="600" letter-spacing="2">DESIGNER &bull; BUILDER &bull; OVERTHINKER</text>
+      <text x="0" y="0" fill="#475569" class="mono" font-size="11" font-weight="600" letter-spacing="2">DESIGNER • BUILDER • OVERTHINKER</text>
       <text x="0" y="44" fill="#0F172A" class="sans" font-size="44" font-weight="900" letter-spacing="-1.5">ISHANT SHARMA</text>
     </g>
 
@@ -154,13 +154,13 @@
 
       <!-- Checklist items -->
       <g transform="translate(18, 48)">
-        <text x="0" y="0" fill="#059669" class="mono" font-size="11" font-weight="700">[&check;]</text>
+        <text x="0" y="0" fill="#059669" class="mono" font-size="11" font-weight="700">[✓]</text>
         <text x="24" y="0" fill="#334155" class="mono" font-size="11">AirBridge: file sharing without a PhD, 3 cables, or cloud BS</text>
 
-        <text x="0" y="20" fill="#059669" class="mono" font-size="11" font-weight="700">[&check;]</text>
+        <text x="0" y="20" fill="#059669" class="mono" font-size="11" font-weight="700">[✓]</text>
         <text x="24" y="20" fill="#334155" class="mono" font-size="11">Pennion: software that doesn't feel like a tax form</text>
 
-        <text x="0" y="40" fill="#DC2626" class="mono" font-size="11" font-weight="700">[&times;]</text>
+        <text x="0" y="40" fill="#DC2626" class="mono" font-size="11" font-weight="700">[×]</text>
         <text x="24" y="40" fill="#64748B" class="mono" font-size="11">touch grass <tspan fill="#EF4444" font-weight="600">(failed: overthinking 2px border-radius)</tspan></text>
       </g>
     </g>
@@ -182,7 +182,7 @@
       <text x="0" y="30" fill="#713F12" class="sans" font-size="12" font-weight="700">if a button needs</text>
       <text x="0" y="46" fill="#713F12" class="sans" font-size="12" font-weight="700">a 5-minute explanation,</text>
       <text x="0" y="62" fill="#713F12" class="sans" font-size="12" font-weight="700">the design failed.</text>
-      <text x="0" y="98" fill="#A16207" class="mono" font-size="9" font-weight="600">&bull; see sticky notes &darr;</text>
+      <text x="0" y="98" fill="#A16207" class="mono" font-size="9" font-weight="600">• see sticky notes ↓</text>
     </g>
   </g>
 

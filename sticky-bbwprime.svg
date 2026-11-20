@@ -25,7 +25,7 @@
     <rect x="162" y="-10" width="100" height="24" rx="2" fill="url(#tapeGrad)" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="0.8" transform="rotate(1.8 212 2)" />
 
     <g transform="translate(26, 32)">
-      <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 03 &bull; FINTECH</text>
+      <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 03 • FINTECH</text>
       <text x="372" y="0" fill="#2563EB" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">DATA EXPERIENCE</text>
 
       <line x1="0" y1="10" x2="372" y2="10" stroke="#3B82F6" stroke-opacity="0.35" stroke-width="1" />
@@ -38,18 +38,18 @@
       <text x="8" y="108" fill="#1E3A8A" class="sans" font-size="12" font-weight="700">research, and live chart workflows together."</text>
 
       <g transform="translate(0, 138)">
-        <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="0" fill="#1E3A8A" class="sans" font-size="12" font-weight="500">Live market data, interactive charting &amp; intelligence</text>
 
-        <text x="0" y="20" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="20" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="20" fill="#1E3A8A" class="sans" font-size="12" font-weight="500">Designed &amp; engineered the full end-to-end UX</text>
 
-        <text x="0" y="40" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="40" fill="#1D4ED8" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="40" fill="#1E3A8A" class="sans" font-size="12" font-weight="500">Status: numbers doing very serious number things</text>
       </g>
 
       <g transform="translate(0, 218)">
-        <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO EXPLORE PRIME &rarr;</text>
+        <text x="0" y="0" fill="#1D4ED8" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO EXPLORE PRIME →</text>
       </g>
     </g>
   </g>

@@ -25,7 +25,7 @@
     <rect x="162" y="-10" width="100" height="24" rx="2" fill="url(#tapeGrad)" stroke="#FFFFFF" stroke-opacity="0.4" stroke-width="0.8" transform="rotate(1.5 212 2)" />
 
     <g transform="translate(26, 32)">
-      <text x="0" y="0" fill="#7E22CE" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 05 &bull; DIGITAL STUDIO</text>
+      <text x="0" y="0" fill="#7E22CE" class="mono" font-size="10" font-weight="700" letter-spacing="1.2">STICKY 05 • DIGITAL STUDIO</text>
       <text x="372" y="0" fill="#9333EA" class="mono" font-size="10" font-weight="700" letter-spacing="1" text-anchor="end">PENNION.COM</text>
 
       <line x1="0" y1="10" x2="372" y2="10" stroke="#A855F7" stroke-opacity="0.35" stroke-width="1" />
@@ -38,18 +38,18 @@
       <text x="8" y="108" fill="#3B0764" class="sans" font-size="12" font-weight="700">websites, and useful online experiences."</text>
 
       <g transform="translate(0, 138)">
-        <text x="0" y="0" fill="#7E22CE" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="0" fill="#7E22CE" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="0" fill="#3B0764" class="sans" font-size="12" font-weight="500">Human-centric consumer software &amp; interfaces</text>
 
-        <text x="0" y="20" fill="#7E22CE" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="20" fill="#7E22CE" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="20" fill="#3B0764" class="sans" font-size="12" font-weight="500">High-fidelity typography, motion &amp; micro-interactions</text>
 
-        <text x="0" y="40" fill="#7E22CE" class="mono" font-size="11" font-weight="700">&bull;</text>
+        <text x="0" y="40" fill="#7E22CE" class="mono" font-size="11" font-weight="700">•</text>
         <text x="14" y="40" fill="#3B0764" class="sans" font-size="12" font-weight="500">Bridging visual taste with low-level systems code</text>
       </g>
 
       <g transform="translate(0, 218)">
-        <text x="0" y="0" fill="#7E22CE" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO VISIT PENNION.COM &rarr;</text>
+        <text x="0" y="0" fill="#7E22CE" class="mono" font-size="10.5" font-weight="800" letter-spacing="0.8">TAP NOTE TO VISIT PENNION.COM →</text>
       </g>
     </g>
   </g>
