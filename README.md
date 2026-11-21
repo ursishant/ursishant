@@ -41,7 +41,7 @@
 </p>
 <p align="center">
   <a href="https://pennion.com/"><img src="./sticky_pennion.svg" width="48%" alt="Pennion Sticky Note" /></a>
-  <a href="mailto:hello@ursishant.netlify.app"><img src="./sticky_connect.svg" width="48%" alt="Connect Sticky Note" /></a>
+  <a href="mailto:hi.pennion@gmail.com"><img src="./sticky_connect.svg" width="48%" alt="Connect Sticky Note" /></a>
 </p>
 
 <br/>
