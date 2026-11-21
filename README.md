@@ -10,7 +10,7 @@
   <a href="https://linkedin.com/in/ursishant">linkedin</a> &nbsp;&bull;&nbsp;
   <a href="https://x.com/ursishant">twitter / x</a> &nbsp;&bull;&nbsp;
   <a href="https://behance.net/ursishant">behance</a> &nbsp;&bull;&nbsp;
-  <a href="mailto:hello@ursishant.netlify.app">get in touch</a>
+  <a href="mailto:hi.pennion@gmail.com">get in touch</a>
 </p>
 
 <br/>
